@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prayer &amp; Spaces · Edinburgh Isoc</title>
+  <meta name="description" content="Live Edinburgh prayer times, campus prayer spaces, and the best halal food near the University of Edinburgh." />
+  <link rel="icon" href="assets/logo-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span class="salaam">السلام عليكم ورحمة الله وبركاته</span>
+      <span class="tb-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v2M9 6a3 3 0 1 1 6 0c0 1.7-1.3 2.6-3 3.4C10.3 8.6 9 7.7 9 6Z"/><path d="M4 21v-6.5C4 11 7 9 12 9s8 2 8 5.5V21"/><path d="M2 21h20M9 21v-4a3 3 0 0 1 6 0v4"/></svg> Since 2001</span>
+    </div>
+  </div>
+
+  <header class="nav">
+    <nav class="nav-inner" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="University of Edinburgh Islamic Society home">
+        <img class="brand-mark" src="assets/logo-mark.png" alt="Edinburgh Isoc crescent logo" width="36" height="36"
+          onerror="this.outerHTML='&lt;svg class=&quot;brand-mark&quot; viewBox=&quot;0 0 100 100&quot; width=&quot;36&quot; height=&quot;36&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M68 12a40 40 0 1 0 0 76 32 32 0 1 1 0-76z&quot; fill=&quot;%23c9a24b&quot;/&gt;&lt;/svg&gt;'" />
+        <span class="brand-text"><b>University of Edinburgh Islamic Society</b></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="fixr.html">Events</a>
+        <a href="prayer.html" class="active" aria-current="page">Prayer &amp; Spaces</a>
+        <a href="planner.html">Planner</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <div class="nav-overlay" aria-hidden="true"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-bg"></div>
+      <div class="hero-scrim"></div>
+      <div class="hero-inner">
+        <h1>Prayer &amp; Spaces</h1>
+        <div class="gold-rule"><span class="diamond"></span></div>
+        <p class="hero-lead">Today’s prayer times for Edinburgh, where to pray on campus, and the best halal food nearby.</p>
+      </div>
+    </section>
+
+    <!-- ===== Live prayer times ===== -->
+    <section class="section section--cream">
+      <div class="container">
+        <div id="prayer-widget" class="prayer-widget reveal" aria-live="polite">
+          <div class="pw-head">
+            <h3>Edinburgh Prayer Times · Today</h3>
+            <div class="pw-dates">
+              <div id="pw-greg">Loading today’s date…</div>
+              <div class="hijri" id="pw-hijri"></div>
+            </div>
+          </div>
+          <div class="pw-grid">
+            <div class="pw-cell" data-prayer="Fajr"><div class="name">Fajr</div><div class="time">—</div><div class="badge-next">Next</div></div>
+            <div class="pw-cell" data-prayer="Sunrise"><div class="name">Sunrise</div><div class="time">—</div><div class="badge-next">Next</div></div>
+            <div class="pw-cell" data-prayer="Dhuhr"><div class="name">Dhuhr</div><div class="time">—</div><div class="badge-next">Next</div></div>
+            <div class="pw-cell" data-prayer="Asr"><div class="name">Asr</div><div class="time">—</div><div class="badge-next">Next</div></div>
+            <div class="pw-cell" data-prayer="Maghrib"><div class="name">Maghrib</div><div class="time">—</div><div class="badge-next">Next</div></div>
+            <div class="pw-cell" data-prayer="Isha"><div class="name">Isha</div><div class="time">—</div><div class="badge-next">Next</div></div>
+          </div>
+          <p class="pw-error" id="pw-error" hidden></p>
+          <p class="pw-note">Times via the AlAdhan API (Muslim World League, method 3). Always double-check locally, as Fajr &amp; Isha vary a lot in Scottish summers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Prayer spaces ===== -->
+    <section class="section section--panel">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Where to pray</span>
+          <h2>Prayer spaces near campus</h2>
+          <div class="gold-rule"><span class="diamond"></span></div>
+          <p>You’re never far from a place to pray around the University of Edinburgh.</p>
+        </div>
+        <div class="grid grid-2">
+          <article class="card reveal">
+            <span class="icon-chip" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v2M9 6a3 3 0 1 1 6 0c0 1.7-1.3 2.6-3 3.4C10.3 8.6 9 7.7 9 6Z"/><path d="M4 21v-6.5C4 11 7 9 12 9s8 2 8 5.5V21"/><path d="M2 21h20M9 21v-4a3 3 0 0 1 6 0v4"/></svg></span>
+            <h3>Edinburgh Central Mosque</h3>
+            <p>On Potterrow, right beside central campus: the main mosque for daily prayers and Jumu’ah, just steps from George Square.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-chip" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21h16M5 21V9l7-5 7 5v12M9 21v-7M15 21v-7"/></svg></span>
+            <h3>University Prayer Rooms</h3>
+            <p>Multi-faith and prayer rooms at the Chaplaincy Centre (Bristo Square).</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-chip" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2h6M10 2v6.5L4.7 18a2 2 0 0 0 1.8 3h11a2 2 0 0 0 1.8-3L14 8.5V2"/><path d="M7.5 15h9"/></svg></span>
+            <h3>King’s Buildings</h3>
+            <p>Science and engineering students have prayer facilities at the King’s Buildings campus. Ask at the hub for the current room.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-chip" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.2" r="1.5"/><circle cx="18" cy="8" r="1.5"/><circle cx="19.5" cy="14.5" r="1.5"/><circle cx="15" cy="19.5" r="1.5"/><circle cx="8.5" cy="19.5" r="1.5"/><circle cx="4.5" cy="14.5" r="1.5"/><circle cx="6" cy="8" r="1.5"/></svg></span>
+            <h3>Jumu’ah Prayer</h3>
+            <p>Friday congregational prayer is held at Dar al Arqam and Edinburgh Central Mosque.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Five prayers ===== -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Know your prayers</span>
+          <h2>The Five Daily Prayers</h2>
+          <div class="gold-rule"><span class="diamond"></span></div>
+        </div>
+        <div class="card reveal" style="padding:0;overflow:hidden;max-width:720px;margin-inline:auto;">
+          <div class="table-wrap" style="border:0;box-shadow:none;border-radius:0;">
+            <table class="styled">
+              <thead>
+                <tr><th scope="col">Prayer</th><th scope="col">Fard rak’ahs</th><th scope="col">Notable Sunnah</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Fajr</td><td>2</td><td>2 before (highly stressed)</td></tr>
+                <tr><td>Dhuhr</td><td>4</td><td>4 before, 2 after</td></tr>
+                <tr><td>Asr</td><td>4</td><td>4 before (optional)</td></tr>
+                <tr><td>Maghrib</td><td>3</td><td>2 after</td></tr>
+                <tr><td>Isha</td><td>4</td><td>2 after, then Witr</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Halal food ===== -->
+    <section class="section section--panel">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Eat well</span>
+          <h2>Halal food near campus</h2>
+          <div class="gold-rule"><span class="diamond"></span></div>
+          <p>Edinburgh is packed with halal options, including venues that proudly sponsor Edinburgh Isoc. (Always confirm halal status directly with each venue.)</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <span class="icon-chip" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v8M4 2v5a2 2 0 0 0 4 0V2M6 10v12M18 2c-1.7 0-3 2-3 5s1 5 3 5v9"/></svg></span>
+            <h3>Nicolson Street &amp; Square</h3>
+            <p>A short walk from George Square: kebabs, curries, grills and late-night bites loved by students.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-chip" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v8M4 2v5a2 2 0 0 0 4 0V2M6 10v12M18 2c-1.7 0-3 2-3 5s1 5 3 5v9"/></svg></span>
+            <h3>Newington &amp; Southside</h3>
+            <p>Cosy cafes and restaurants down the South Clerk Street stretch, perfect for a relaxed group meal.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-chip" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v8M4 2v5a2 2 0 0 0 4 0V2M6 10v12M18 2c-1.7 0-3 2-3 5s1 5 3 5v9"/></svg></span>
+            <h3>Around Potterrow</h3>
+            <p>Grab a quick halal lunch near the mosque and central campus before or after prayer.</p>
+          </article>
+        </div>
+        <p class="center" style="color:var(--muted);margin-top:28px;">Check back soon for the full list on Instagram <a href="https://instagram.com/isocedinburgh" target="_blank" rel="noopener">@isocedinburgh</a>.</p>
+      </div>
+    </section>
+
+    <!-- ===== Quran quote ===== -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="quote-band reveal">
+          <p class="ar">إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا</p>
+          <p class="tr">“Indeed, prayer has been decreed upon the believers a decree of specified times.”</p>
+          <p class="ref">Qur’an 4:103</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <p>The University of Edinburgh Islamic Society, uniting Muslims across Edinburgh since 2001. Affiliated with EUSA &amp; FOSIS Scotland.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fixr.html">Events</a></li>
+            <li><a href="prayer.html">Prayer &amp; Spaces</a></li>
+            <li><a href="planner.html">Planner</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://instagram.com/isocedinburgh" target="_blank" rel="noopener">Instagram @isocedinburgh</a></li>
+            <li><a href="mailto:isocedinburgh@gmail.com">isocedinburgh@gmail.com</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="brand-mini">
+          <img src="assets/logo-mark.png" alt="" aria-hidden="true" width="26" height="26" onerror="this.style.display='none'" />
+          Edinburgh Isoc
+        </span>
+        <span>&copy; <span id="year">2026</span> University of Edinburgh Islamic Society. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
