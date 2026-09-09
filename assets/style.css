@@ -87,7 +87,7 @@ p.center, .center p { margin-inline: auto; }
     linear-gradient(165deg, rgba(74,75,124,.5), rgba(18,21,58,.94) 62%),
     url('cta-photo.jpg');
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
 }
 .section--ink.has-photo::before { content: ""; position: absolute; inset: 0; background-image: var(--pattern-gold); background-size: 84px 84px; opacity: .08; mix-blend-mode: soft-light; }
 .section--ink.has-photo .container { position: relative; }
