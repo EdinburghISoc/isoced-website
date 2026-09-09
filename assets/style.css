@@ -130,7 +130,7 @@ p.center, .center p { margin-inline: auto; }
 /* =====================================================================
    Sticky nav
    ===================================================================== */
-.nav { position: sticky; top: 0; z-index: 50; background: rgba(243,238,221,.86); backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px); border-bottom: 1px solid var(--line); }
+.nav { position: sticky; top: 0; z-index: 70; background: rgba(243,238,221,.86); backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px); border-bottom: 1px solid var(--line); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 24px; max-width: var(--maxw); margin-inline: auto; }
 .brand { display: inline-flex; align-items: center; gap: 12px; }
 .brand img.brand-mark, .brand svg.brand-mark { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; box-shadow: var(--shadow-sm); background: var(--cream); }
