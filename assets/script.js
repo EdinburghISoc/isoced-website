@@ -1,5 +1,5 @@
 /* =====================================================================
-   Edinburgh Isoc: site behaviour (vanilla JS, no dependencies)
+   Edinburgh ISoc: site behaviour (vanilla JS, no dependencies)
    1. Mobile nav toggle
    2. Scroll-reveal via IntersectionObserver
    3. Footer year auto-fill
@@ -72,9 +72,9 @@
       var subject = (form.elements['subject'].value || '').trim();
       var message = (form.elements['message'].value || '').trim();
 
-      var mailSubject = subject ? subject : 'Message from the Edinburgh Isoc website';
+      var mailSubject = subject ? subject : 'Message from the Edinburgh ISoc website';
       var body =
-        'Assalamu alaikum Edinburgh Isoc team,\n\n' +
+        'Assalamu alaikum Edinburgh ISoc team,\n\n' +
         message + '\n\n' +
         '-\n' +
         'Name: ' + name + '\n' +
