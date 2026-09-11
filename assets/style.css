@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Parisienne&family=Inter:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
 
-/* ---------- Design tokens — navy / gold / cream ---------- */
+/* ---------- Design tokens: navy / gold / cream ---------- */
 :root {
   --ink: #11154a;
   --ink2: #0a0c2c;
@@ -110,7 +110,7 @@ p.center, .center p { margin-inline: auto; }
 /* Arabic text */
 .arabic { font-family: var(--arabic); direction: rtl; line-height: 2; }
 
-/* Script accent — sparing use, short phrases only */
+/* Script accent: sparing use, short phrases only */
 .script { font-family: var(--script); font-weight: 400; color: var(--gold); line-height: 1.1; }
 .hero-script { display: block; font-family: var(--script); font-size: clamp(1.35rem, 5.5vw, 2.15rem); color: var(--gold-lt); margin: 0 0 14px; }
 
@@ -167,7 +167,7 @@ p.center, .center p { margin-inline: auto; }
 .btn svg { width: 17px; height: 17px; }
 
 /* =====================================================================
-   Hero — photographic, layered
+   Hero: photographic, layered
    ===================================================================== */
 .hero {
   position: relative;
@@ -203,7 +203,7 @@ p.center, .center p { margin-inline: auto; }
 .hero .hero-meta span { display: inline-flex; align-items: center; gap: 7px; }
 .hero .hero-meta svg { width: 15px; height: 15px; }
 
-/* Page (inner) hero — smaller, for sub pages, same photographic system */
+/* Page (inner) hero: smaller, for sub pages, same photographic system */
 .page-hero { position: relative; color: var(--cream); overflow: hidden; isolation: isolate; }
 .page-hero .hero-bg { background-position: center 60%; }
 .page-hero .hero-scrim { background: linear-gradient(165deg, rgba(255,255,255,.16) 0%, rgba(68,70,124,.78) 30%, rgba(17,21,74,.94) 70%); }
