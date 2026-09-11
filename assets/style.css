@@ -311,6 +311,8 @@ p.center, .center p { margin-inline: auto; }
 .pw-cell { background: rgba(255,255,255,.07); border: 1px solid rgba(201,162,75,.18); border-radius: 14px; padding: 17px 10px; text-align: center; transition: transform .2s ease, background .2s ease; }
 .pw-cell .name { font-size: .82rem; letter-spacing: .05em; color: rgba(243,238,221,.82); margin-bottom: 6px; }
 .pw-cell .time { font-family: var(--serif); font-weight: 600; font-size: 1.4rem; color: var(--white); font-variant-numeric: tabular-nums; }
+.pw-cell .jamaah { margin-top: 4px; font-size: .72rem; letter-spacing: .03em; color: var(--gold-lt); font-variant-numeric: tabular-nums; }
+.pw-cell.next .jamaah { color: var(--ink2); }
 .pw-cell.next { background: linear-gradient(150deg, var(--gold-lt), var(--gold)); border-color: var(--gold-lt); transform: translateY(-5px); box-shadow: 0 14px 28px rgba(0,0,0,.28); }
 .pw-cell.next .name, .pw-cell.next .time { color: var(--ink2); }
 .pw-cell .badge-next { display: none; font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin-top: 7px; color: var(--ink2); }

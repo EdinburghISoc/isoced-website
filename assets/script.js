@@ -186,6 +186,47 @@
   }
 
   /* ----------------------------------------------------------------
+     5b. Friday Jumu'ah: relabel Dhuhr and show the Jama'ah time
+     (Dar al-Arqam's live timetable via go2masjid.com; the khutbah/
+     jama'ah start time is set by the mosque and drifts through the
+     year, so it isn't something the AlAdhan calculation covers)
+  ---------------------------------------------------------------- */
+  function initJummahTime() {
+    var widget = document.getElementById('prayer-widget');
+    if (!widget) return;
+
+    var now = new Date();
+    if (now.getDay() !== 5) return; // only on Fridays
+
+    var nameEl = document.getElementById('pw-dhuhr-name');
+    if (nameEl) nameEl.textContent = 'Jummah';
+
+    var todayStr = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate());
+    var url = 'https://go2masjid.com/api/papi/loc_getfavmasjid.php?lat=0&lon=0&dist=1&mlim=1&slim=36&mid=edin_105_';
+
+    fetch(url)
+      .then(function (res) {
+        if (!res.ok) throw new Error('Network response was not ok');
+        return res.json();
+      })
+      .then(function (data) {
+        var salats = data && data[0] && data[0].salats;
+        if (!salats || !salats.length) throw new Error('No salat data');
+        var today = salats.filter(function (s) { return s.salatdate === todayStr; })[0];
+        var jumma = today && today.jumma;
+        if (!jumma) throw new Error('No jumma time for today');
+        var jamaahEl = document.getElementById('pw-jamaah');
+        if (jamaahEl) {
+          jamaahEl.textContent = "Jama'ah " + to12h(jumma) + ' · Dar al-Arqam';
+          jamaahEl.hidden = false;
+        }
+      })
+      .catch(function () {
+        // Live Jama'ah time unavailable - the "Jummah" label change still stands on its own
+      });
+  }
+
+  /* ----------------------------------------------------------------
      Init
   ---------------------------------------------------------------- */
   document.addEventListener('DOMContentLoaded', function () {
@@ -194,5 +235,6 @@
     initYear();
     initContactForm();
     initPrayerTimes();
+    initJummahTime();
   });
 })();
